@@ -1,5 +1,8 @@
 terraform {
 }
+provider "aws" {
+  
+}
 
 # security group 
 variable "main" {
