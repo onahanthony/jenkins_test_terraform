@@ -72,7 +72,6 @@ resource "aws_instance" "test" {
   instance_type          = local.instance_type
   key_name               = "my-key"
   vpc_security_group_ids = [aws_security_group.http.id]
-  user_data	         = file("nginx.sh")
   tags = {
     Name = "HelloWorld"
   }
