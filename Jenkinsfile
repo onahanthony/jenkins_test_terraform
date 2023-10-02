@@ -10,7 +10,7 @@ pipeline {
         stage('Terraform Cloud') {
             steps {
                 script {
-                    def terraformToken = 'MNy1zgG9zWzSmw.atlasv1.zauXBae5FaZ41jV3bZRXcyjeY1LhnPifqEbUpEMblP8dTq6yksbzemVJ08RaRswOA7M'
+                    def terraformToken = credentials('TF_API_TOKEN')
                     def workspaceName = 'jenkins_terraform'
                     def organizationName = 'cloudprof'
 
