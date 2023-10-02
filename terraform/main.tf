@@ -1,12 +1,4 @@
 terraform {
-  cloud {
-    organization = "cloudprof"
-
-    workspaces {
-      name = "jenkins_terraform"
-    }
-  }
-
   required_providers {
     aws = {
       source  = "hashicorp/aws"
