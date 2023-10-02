@@ -40,8 +40,7 @@ pipeline {
                 }
             }
         }
-    }  
-    stages {
+    
         stage("run terraform") {
             steps {
                 script {
@@ -53,5 +52,5 @@ pipeline {
                 }
             }
         }
-     }	
+    }
 }
